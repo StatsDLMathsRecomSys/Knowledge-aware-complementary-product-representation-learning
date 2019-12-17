@@ -1,0 +1,4 @@
+build/*
+output/*
+thrid_party/eigen/build/*
+.DS_Store
