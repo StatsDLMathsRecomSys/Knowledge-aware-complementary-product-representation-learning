@@ -1,11 +1,24 @@
 # Knowledge-aware Complementary Product Representation Learning (WSDM 2020)
-This repo contains the reference implementation proposed in the paper <strong>Knowledge-aware Complementary Product Representation Learning</strong>.
+
+#### Authors: Da Xu*, Chuanwei Ruan*, Sushant Kumar, Evren Korpeoglu,  Kannan Achan
+
+Please contact at Chuanwei.Ruan@walmartlabs.com or Da.Xu@walmartlabs.com for questions.
+
+
+### Introduction
+Learning product representations that reflect complementary relationship plays a central role in e-commerce recommender system. In the absence of the product relationships graph, which existing methods rely on, there is a need to detect the complementary relationships directly from noisy and sparse customer purchase activities. 
+
+Furthermore, unlike simple relationships such as similarity, complementariness is asymmetric and non-transitive. Standard usage of representation learning emphasizes on only one set of embedding, which is problematic for modelling such properties of complementariness. We propose using knowledge-aware learning with dual product embedding to solve the above challenges. 
+
+We encode contextual knowledge into product representation by multi-task learning, to alleviate the sparsity issue. By explicitly modelling with user bias terms, we separate the noise of customer-specific preferences from the complementariness. Also, we adopt the dual embedding framework to capture the intrinsic properties of complementariness and provide geometric interpretation motivated by the classic separating hyperplane theory. Finally, we propose a Bayesian network structure that unifies all the components, which also concludes several popular models as special cases. 
 
 <p align="center">
 <img src="PGM.png" alt="drawing" width="400"/>
 </p>
 
-Please contact at Chuanwei.Ruan@walmartlabs.com or Da.Xu@walmartlabs.com for questions.
+### Product Knowledge Graph Embedding for E-commerce 
+In our concurrent work [https://arxiv.org/pdf/1911.12481.pdf](https://arxiv.org/pdf/1911.12481.pdf), we extend the method proposed in this paper to the general notion of kneowledge graph embedding for the e-commerce. More advanced technologies, such as self-attention mechanism, Poincare emebedding and stochastic multi-task training are dicussed in detail in that paper.
+
 # Requirements
 
 * cmake 3.0 or newer
@@ -143,9 +156,12 @@ Part of the implementation is adapted from Facebook fasttext library (https://gi
 
 
 # Citation 
-ACM Reference Format:
-
-Da Xu, Chuanwei Ruan, and Jason Cho, Evren Korpeoglu, Sushant Kumar,
-Kannan Achan. 2020. Knowledge-aware Complementary Product Representation Learning. In The Thirteenth ACM International Conference on Web
-Search and Data Mining (WSDM ’20), February 3–7, 2020, Houston, TX, USA.
-ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3336191.3371854
+```
+@inproceedings{xu2020knowledge,
+  title={Knowledge-aware Complementary Product Representation Learning},
+  author={Xu, Da and Ruan, Chuanwei and Cho, Jason and Korpeoglu, Evren and Kumar, Sushant and Achan, Kannan},
+  booktitle={Proceedings of the 13th International Conference on Web Search and Data Mining},
+  pages={681--689},
+  year={2020}
+}
+```
