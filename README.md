@@ -17,7 +17,7 @@ We encode contextual knowledge into product representation by multi-task learnin
 </p>
 
 ### Product Knowledge Graph Embedding for E-commerce 
-In our concurrent work [https://arxiv.org/pdf/1911.12481.pdf](https://arxiv.org/pdf/1911.12481.pdf), we extend the method proposed in this paper to the general notion of kneowledge graph embedding for the e-commerce. More advanced technologies, such as self-attention mechanism, Poincare emebedding and stochastic multi-task training are dicussed in detail in that paper.
+In our concurrent work [Product Knowledge Graph Embedding for E-commerce](https://arxiv.org/pdf/1911.12481.pdf), we extend the method proposed in this paper to the general notion of kneowledge graph embedding for the e-commerce. More advanced technologies, such as self-attention mechanism, Poincare emebedding and stochastic multi-task training are dicussed in detail in that paper.
 
 # Requirements
 
