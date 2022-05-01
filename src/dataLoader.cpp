@@ -159,6 +159,7 @@ std::vector<std::vector<int32_t> > DataLoader::loadOrderedBasket(const std::stri
   const std::string commaDeli = ",";
 
   int64_t lineCount = 0;
+  int64_t errCount = 0;
   while (std::getline(ifs, line)) {
     lineCount += 1;
     std::vector<int32_t> currLine;
