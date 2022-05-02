@@ -47,6 +47,11 @@ make
 make install
 ```
 
+### ZLIB not found?
+```bash
+sudo apt-get install zlib1g-dev
+```
+
 ## How to make on CentOS
 
 ```
